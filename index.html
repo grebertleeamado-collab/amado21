@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grebert Lee Amado | Grand Line Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h2 class="logo">⚓ BERTBERT</h2>
+        <ul>
+            <li><a class="active" onclick="closeAllModals()">HOME</a></li>
+            <li><a onclick="openModal('projectsModal')">MY PROJECTS</a></li>
+            <li><a onclick="openModal('aboutModal')">ABOUT ME</a></li>
+            <li><a onclick="openModal('contactModal')">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="profile-side">
+                <img src="amado.jpg.jpg" class="profile" alt="Profile Picture">
+            </div>
+            <div class="info-side">
+                <h1>Hi!, it's <span class="highlight">GREBERT</span></h1>
+                <h2>Future King of <span class="highlight">FULL-STACK</span> 🏴‍☠️</h2>
+                <p>Computer Science student focused on practical, user-friendly software. Sailing through the Grand Line of web development and turning ideas into real products.</p>
+                
+                <div class="menu-grid">
+                    <button class="menu-btn" onclick="openModal('aboutModal')">About Me</button>
+                    <button class="menu-btn" onclick="openModal('techModal')">Tech & Skills</button>
+                    <button class="menu-btn" onclick="openModal('goalModal')">Goals & Hobbies</button>
+                    <button class="menu-btn" onclick="openModal('projectsModal')">Projects</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL: About Me -->
+    <div id="aboutModal" class="modal">
+        <span onclick="closeModal('aboutModal')">&times;</span>
+        <div class="modal-content">
+            <h2>About Me</h2>
+            <p>I'm a Computer Science student focused on full-stack web development. I build responsive, user-friendly applications using HTML, CSS, JavaScript, and Python. I enjoy turning real-world problems into clean and efficient solutions while continuously improving my skills through personal projects.</p>
+        </div>
+    </div>
+
+    <!-- MODAL: Tech Stack & Skills -->
+    <div id="techModal" class="modal">
+        <span onclick="closeModal('techModal')">&times;</span>
+        <div class="modal-content">
+            <h2>Tech Stack</h2>
+            <ul class="custom-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+            <h2 style="margin-top: 25px;">Skills</h2>
+            <ul class="custom-list">
+                <li>Problem Solving</li>
+                <li>Clean and Organized Coding</li>
+                <li>Team Collaboration</li>
+                <li>Time Management</li>
+                <li>Quick Learner</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MODAL: Goals & Hobbies -->
+    <div id="goalModal" class="modal">
+        <span onclick="closeModal('goalModal')">&times;</span>
+        <div class="modal-content">
+            <h2>Goal</h2>
+            <ul class="custom-list">
+                <li>Become a skilled full-stack developer</li>
+                <li>Build impactful real-world projects</li>
+                <li>Learn modern tools and frameworks</li>
+                <li>Grow through teamwork and collaboration</li>
+            </ul>
+            <h2 style="margin-top: 25px;">Hobbies</h2>
+            <ul class="custom-list">
+                <li>Coding side projects</li>
+                <li>Learning new tech</li>
+                <li>Gaming</li>
+                <li>Watching tutorials</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MODAL: Projects Menu -->
+    <div id="projectsModal" class="modal">
+        <span onclick="closeModal('projectsModal')">&times;</span>
+        <div class="modal-content">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="card" onclick="openModal('p1')">
+                    <h3>Entrepreneurial Mind</h3>
+                </div>
+                <div class="card" onclick="openModal('p2')">
+                    <h3>Multimedia</h3>
+                </div>
+                <div class="card" onclick="openModal('p3')">
+                    <h3>Embedded Systems</h3>
+                </div>
+                <div class="card" onclick="openModal('p4')">
+                    <h3>Intermediate Programming</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Contact (Tinuod nga Links) -->
+    <div id="contactModal" class="modal">
+        <span onclick="closeModal('contactModal')">&times;</span>
+        <div class="modal-content">
+            <h2>CONTACT</h2>
+            <p>Phone: 09544491770</p>
+            <div class="social-links">
+                <a href="mailto:grebertleeamado43@gmail.com" target="_blank" class="social-btn">📧 Email</a>
+                <a href="https://www.facebook.com/grebert.lee.amado" target="_blank" class="social-btn">📘 Facebook</a>
+                <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=uxxec7q" target="_blank" class="social-btn">📸 Instagram</a>
+                <a href="https://www.tiktok.com/@renzoku5?_r=1&_t=ZS-9ABvCdHogDd" target="_blank" class="social-btn">🎵 TikTok</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub-Modals for Projects -->
+    <div id="p1" class="modal">
+        <span onclick="closeModal('p1')">&times;</span>
+        <div class="modal-content">
+            <video controls>
+                <source src="vid1.mp4" type="video/mp4">
+            </video>
+            <p>Video Pitching in Entrepreneurial Mind</p>
+        </div>
+    </div>
+
+    <div id="p2" class="modal">
+        <span onclick="closeModal('p2')">&times;</span>
+        <div class="modal-content">
+            <img src="multi1.jpg" alt="Multimedia project 1">
+            <p>Multimedia editing project.</p>
+            <img src="multi2.jpg" alt="Multimedia project 2">
+            <p>Graphic design activity.</p>
+        </div>
+    </div>
+
+    <div id="p3" class="modal">
+        <span onclick="closeModal('p3')">&times;</span>
+        <div class="modal-content">
+            <img src="embedded.jpg" alt="Embedded setup">
+            <p>Embedded setup.</p>
+            <img src="embedded2.jpg" alt="Microcontroller testing">
+            <p>Microcontroller testing.</p>
+        </div>
+    </div>
+
+    <div id="p4" class="modal">
+        <span onclick="closeModal('p4')">&times;</span>
+        <div class="modal-content">
+            <img src="inter.jpg" alt="Intermediate Programming final project">
+            <p>Final project in our Intermediate Programming</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
